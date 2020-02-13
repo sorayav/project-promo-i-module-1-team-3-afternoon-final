@@ -1,6 +1,5 @@
-# project-promo-i-module-1-team-3-afternoon-final# 
+# Welcome to Collapsing Margings website! # 
 
-Welcome to Collapsing Margings website!
 
 This project is based on the creation of a website with information about each of us, where you can get to know us better and also contact us through a form!
 
