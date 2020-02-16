@@ -20,11 +20,22 @@ a:visited {
     color: $menuColor;
     margin-top: 0;
 
+<<<<<<< HEAD
     & a:hover {
       color: $bodyImportantColor;
       transition: all 0.7s ease;
     }
   }
+=======
+}
+}
+
+.header {
+  position: fixed;
+  padding: 0px;
+  width: 100vw;
+  margin: auto;
+>>>>>>> e996054612cf16ad88313841be0769b0113d1f38
 
   .header {
     position: fixed;
