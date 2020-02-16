@@ -4,16 +4,16 @@
     justify-content: center;
     align-content: center;
     padding:30px;
-    color:var(--light-gray);
+    color:$strengthsColor;
     font-size: var(--text-content-size);
     text-align:center;
     font-family: var(--opensans);
     
-    border-width: 100%;
+    border-width: 100%; /* holaaa */
 }
 
 .footer-nav ul li a{
-    color: var(--dark-gray);
+    color:$bodyColor;
     font-weight: bold;
 }
 .footer-nav ul li a:hover{
