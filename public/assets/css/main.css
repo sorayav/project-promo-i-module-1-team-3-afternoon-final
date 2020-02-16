@@ -247,20 +247,20 @@ a:visited {
   transition: all 0.7s ease;
 }
 
-.container-header .header {
+.header {
   position: fixed;
   padding: 0px;
   width: 100vw;
   margin: auto;
 }
 
-.container-header .header .group {
+.header .group {
   opacity: 0.95;
   background-color: #099d8d;
   text-align: center;
 }
 
-.container-header .header .group .main-menu {
+.header .main-menu {
   padding: 0.9375rem;
   opacity: 0.9;
   background-color: #14d9c4;
@@ -268,17 +268,11 @@ a:visited {
   text-align: center;
 }
 
-.container-header .header .group .main-menu a:hover {
-  color: #000;
-  -webkit-transition: all 0.7s ease;
-  transition: all 0.7s ease;
-}
-
-.container-header .main-menu ul li {
+.header .main-menu ul li {
   display: inline;
 }
 
-.container-header .main-menu ul li ul li a {
+.header .main-menu ul li ul li a {
   font-size: 0.9375rem;
   font-family: "Rubik", sans-serif;
   font-weight: 500;
@@ -287,9 +281,15 @@ a:visited {
   padding: 0.5rem;
 }
 
+.header .main-menu a:hover {
+  color: #000;
+  -webkit-transition: all 0.7s ease;
+  transition: all 0.7s ease;
+}
+
 .hero {
   background-color: #099d8d;
-  background-image: url("./assets/images/IMG_20200207_175627.jpg");
+  background-image: url(/_src/assets/images/IMG_20200207_175627.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;

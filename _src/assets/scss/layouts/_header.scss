@@ -25,49 +25,65 @@ a:visited {
       transition: all 0.7s ease;
     }
   }
+}
 
-  .header {
-    position: fixed;
-    padding: 0px;
-    width: 100vw;
-    margin: auto;
+.header {
+  position: fixed;
+  padding: 0px;
+  width: 100vw;
+  margin: auto;
 
-    .group {
-      opacity: 0.95;
-      background-color: $headerColor;
-      text-align: center;
-
-      .main-menu {
-        padding: rem(15);
-        opacity: 0.9;
-        background-color: $subHeaderColor;
-        z-index: 10;
-        text-align: center;
-
-        & a:hover {
-          color: $bodyImportantColor;
-          transition: all 0.7s ease;
-        }
-      }
-    }
+  .group {
+    opacity: 0.95;
+    background-color: $headerColor;
+    text-align: center;
   }
 
-  .main-menu ul li {
-    display: inline;
+  .main-menu {
+    padding: rem(15);
+    opacity: 0.9;
+    background-color: $subHeaderColor;
+    z-index: 10;
+    text-align: center;
 
-    & ul li a {
-      font-size: rem(15);
-      font-family: $fontFamilyTitle;
-      font-weight: 500;
-      font-style: normal;
-      color: $menuColor;
-      padding: rem(8);
+    & ul li {
+      display: inline;
+
+       & ul li a {
+        font-size: rem(15);
+        font-family: $fontFamilyTitle;
+        font-weight: 500;
+        font-style: normal;
+        color: $menuColor;
+        padding: rem(8);
+      }
+    }
+
+    & a:hover {
+      color: $bodyImportantColor;
+      transition: all 0.7s ease;
     }
   }
 }
+
+// .main-menu ul li {
+//   display: inline;
+
+  // & ul li a {
+  //   font-size: rem(15);
+  //   font-family: $fontFamilyTitle;
+  //   font-weight: 500;
+  //   font-style: normal;
+  //   color: $menuColor;
+  //   padding: rem(8);
+  // }
+
+
+// Aqui empieza el hero
+
 .hero {
   background-color: $headerColor;
-  background-image: url("./assets/images/IMG_20200207_175627.jpg");
+  background-image: url(/_src/assets/images/IMG_20200207_175627.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
