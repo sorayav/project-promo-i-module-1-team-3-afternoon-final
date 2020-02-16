@@ -289,7 +289,7 @@ a:visited {
 
 .hero {
   background-color: #099d8d;
-  background-image: url(../images/IMG_20200207_175627.jpg);
+  background-image: url("./assets/images/IMG_20200207_175627.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
