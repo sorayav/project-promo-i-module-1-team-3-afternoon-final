@@ -19,57 +19,52 @@ a:visited {
     padding: rem(20);
     color: $menuColor;
     margin-top: 0;
-<<<<<<< HEAD
 
     & a:hover {
       color: $bodyImportantColor;
       transition: all 0.7s ease;
     }
   }
-=======
-}
->>>>>>> 0db1b92a8381261fa29cb67ff36949d8048fd1a1
-}
 
-.header {
-  position: fixed;
-  padding: 0px;
-  width: 100vw;
-  margin: auto;
+  .header {
+    position: fixed;
+    padding: 0px;
+    width: 100vw;
+    margin: auto;
 
-  .group {
-    opacity: 0.95;
-    background-color: $headerColor;
-    text-align: center;
-
-    .main-menu {
-      padding: rem(15);
-      opacity: 0.9;
-      background-color: $subHeaderColor;
-      z-index: 10;
+    .group {
+      opacity: 0.95;
+      background-color: $headerColor;
       text-align: center;
 
-      & a:hover {
-        color: $bodyImportantColor;
-        transition: all 0.7s ease;
+      .main-menu {
+        padding: rem(15);
+        opacity: 0.9;
+        background-color: $subHeaderColor;
+        z-index: 10;
+        text-align: center;
+
+        & a:hover {
+          color: $bodyImportantColor;
+          transition: all 0.7s ease;
+        }
       }
     }
   }
-}
 
-.main-menu ul li {
-  display: inline;
+  .main-menu ul li {
+    display: inline;
 
-  & ul li a {
-    font-size: rem(15);
-    font-family: $fontFamilyTitle;
-    font-weight: 500;
-    font-style: normal;
-    color: $menuColor;
-    padding: rem(8);
+    & ul li a {
+      font-size: rem(15);
+      font-family: $fontFamilyTitle;
+      font-weight: 500;
+      font-style: normal;
+      color: $menuColor;
+      padding: rem(8);
+    }
   }
 }
-
 .hero {
   background-color: $headerColor;
   background-image: url(../images/IMG_20200207_175627.jpg);
@@ -138,19 +133,18 @@ a:visited {
   }
 
   .hero {
-  .whitebox {
-    position: relative;
-    height: 421px;
-  .textbox {
-    left: 15px;
-    bottom: 29px;
-    opacity: 80%;
-    padding: rem(15) rem(30);
-    width: 441px;
+    .whitebox {
+      position: relative;
+      height: 421px;
+      .textbox {
+        left: 15px;
+        bottom: 29px;
+        opacity: 80%;
+        padding: rem(15) rem(30);
+        width: 441px;
+      }
     }
   }
-}
-
 }
 
 @include forPc {
