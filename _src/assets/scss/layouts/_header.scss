@@ -20,22 +20,11 @@ a:visited {
     color: $menuColor;
     margin-top: 0;
 
-<<<<<<< HEAD
     & a:hover {
       color: $bodyImportantColor;
       transition: all 0.7s ease;
     }
   }
-=======
-}
-}
-
-.header {
-  position: fixed;
-  padding: 0px;
-  width: 100vw;
-  margin: auto;
->>>>>>> e996054612cf16ad88313841be0769b0113d1f38
 
   .header {
     position: fixed;
@@ -164,16 +153,17 @@ a:visited {
   }
   .hero {
     height: 550px;
-  }
-  .whitebox {
-    height: 550px;
-    & p {
-      font-size: rem(20);
+
+    .whitebox {
+      height: 550px;
+      & p {
+        font-size: rem(20);
+        .textbox {
+          width: 574px;
+          height: 90px;
+        }
+      }
     }
-  }
-  .textbox {
-    width: 574px;
-    height: 90px;
   }
 }
 //   .whitebox p {
