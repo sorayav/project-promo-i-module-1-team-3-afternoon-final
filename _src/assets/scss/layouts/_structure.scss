@@ -1,0 +1,37 @@
+html {
+    font-size: 16px;
+}
+
+body * {
+    margin: 0px;
+    padding: 0px;
+}
+
+a {
+    &hover {
+    color: $bodyImportantColor;
+    transition: all 0.7s ease;
+    }
+    &visited {
+        color: white;
+        text-decoration: none;
+    }
+}
+
+.container {
+    text-align: center;
+    margin: auto;
+    padding: 15px;
+    max-width: 300px;
+    width: 100%;
+    
+    @include forTablet {
+        max-width: 700px;
+    }
+}
+
+.container-footer {
+    border-top: solid grey 1px;
+    border-width: 100%;
+    padding: 0;
+}
