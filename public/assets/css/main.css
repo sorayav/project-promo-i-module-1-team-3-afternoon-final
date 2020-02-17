@@ -1,4 +1,4 @@
-/* STRUCTURE *//* COLORS *//*ANTES --green*//*ANTES --aqua*//*ANTES --light-gray*//*ANTES --dark-gray*//* ANTES --white *//* ANTES --color *//* TEXT STYLE *//* ANTES --rubik *//*ANTES --opensans*//* ANTES --text-content-size *//* ANTES --h2 *//* ANTES --h3 *//* DEVICES *//*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css *//* Document
+@charset "UTF-8";/* STRUCTURE *//* COLORS *//*ANTES --green*//*ANTES --aqua*//*ANTES --light-gray*//*ANTES --dark-gray*//* ANTES --white *//* ANTES --color *//* TEXT STYLE *//* ANTES --rubik *//*ANTES --opensans*//* ANTES --text-content-size *//* ANTES --h2 *//* ANTES --h3 *//* DEVICES *//*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css *//* Document
    ========================================================================== *//**
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
@@ -381,6 +381,7 @@ a:visited {
   text-align: center;
   font-family: var(--opensans);
   border-width: 100%;
+ /* no sé hacerlo de otra manera */;
 }
 
 .footer .footer-nav {
@@ -404,7 +405,7 @@ a:visited {
   transition: all 0.7s ease;
 }
 
-.footer .footer-nav .footer-logo img {
+.footer .footer-logo img {
   width: 120px;
 }/* .footer{
     display:flex;

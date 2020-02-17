@@ -23,14 +23,15 @@
                         color: var(--black);
                         transition: all 0.7s ease;
                 }
-        }
-            .footer-logo{
-            img {
+        }       
 
-          width:120px;
       }
-          }  
+      .footer-logo{
+        img{
+            width:120px;
         }
+    } /* no sé hacerlo de otra manera */
+
         @media all and (min-width:$tablet){
         height:auto;
         flex-direction: row;
