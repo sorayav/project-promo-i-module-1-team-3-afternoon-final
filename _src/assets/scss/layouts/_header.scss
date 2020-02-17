@@ -14,7 +14,7 @@ a:visited {
   font-style: normal;
   letter-spacing: normal;
 
-  & .h1header {
+  .h1header {
     font-size: rem(16);
     padding: rem(20);
     color: $menuColor;
@@ -30,7 +30,7 @@ a:visited {
 .header {
   position: fixed;
   padding: 0px;
-  width: 100vw;
+  width: 100vw; 
   margin: auto;
 
   .group {
@@ -83,7 +83,7 @@ a:visited {
 
 .hero {
   background-color: $headerColor;
-  background-image: url(/_src/assets/images/IMG_20200207_175627.jpg);
+  background-image: url(../images/IMG_20200207_175627.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -126,7 +126,7 @@ a:visited {
     opacity: 0.95;
     height: 60px;
 
-    & h1 {
+   .h1header {
       padding: rem(20) 0px;
     }
   }
