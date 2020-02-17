@@ -324,7 +324,45 @@ a:visited {
   position: relative;
   text-align: left;
   padding: 0.9375rem;
-}/* A partir de aqui es responisve */.footer {
+}/* A partir de aqui es responisve *//* @import 'layouts/aboutus'; */.strengths {
+  background-color: #b8b8b9;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  position: relative;
+}
+
+.strengths .strengths__triangle {
+  width: 1.875rem;
+  height: 1.875rem;
+  background-color: white;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  position: absolute;
+  top: -0.9375rem;
+}
+
+.strengths h2 {
+  color: #099d8d;
+  font-size: 24px;
+  font-family: "Rubik", sans-serif;
+  font-weight: 31.25rem;
+  margin: 0.9375rem;
+}
+
+.strengths p {
+  padding-bottom: 1.875rem;
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+  color: #54585a;
+  text-align: center;
+  line-height: 1.5rem;
+}
+
+.footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -476,6 +514,26 @@ padding: 5px; YA
     opacity: 80%;
     padding: 0.9375rem 1.875rem;
     width: 441px;
+  }
+
+  .strengths .strengths__box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  .strengths div {
+    max-width: 50%;
+    padding: 15px 0px;
+  }
+
+  .strengths h2 {
+    margin: 0px;
+    padding: 15px;
+  }
+
+  .strengths p {
+    margin: 0 15px;
   }
 
   .footer {
