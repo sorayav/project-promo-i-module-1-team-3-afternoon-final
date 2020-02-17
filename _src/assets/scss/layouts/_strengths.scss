@@ -1,0 +1,53 @@
+.strengths {
+    background-color: $strengthsColor;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    
+    & .strengths__triangle {
+        width: rem(30);
+        height: rem(30);
+        background-color: white;
+        transform: rotate(45deg);
+        position: absolute;
+        top: rem(-15);
+    }
+
+     & .strengths__box {
+        @include forTablet {
+            display: flex;
+            }
+        }
+        div {
+             @include forTablet {    
+                max-width: 50%;
+                padding: 15px 0px;
+             }
+        }
+        h2 {
+            color: $headerColor;
+            font-size: $fontSizeTitle;
+            font-family: $fontFamilyTitle;
+            font-weight: rem(500);
+            margin: rem(15);
+            
+            @include forTablet {
+                margin: 0px;
+                    padding: 15px;
+            }
+        }
+
+        p {
+            padding-bottom: rem(30);
+            font-size: $fontSizeBody;
+            font-family: $fontFamilyBody;
+            color: $bodyColor;
+            text-align: center;
+            line-height: rem(24);
+            
+            @include forTablet {
+                margin: 0 15px;
+            }
+        }
+    }
+}
