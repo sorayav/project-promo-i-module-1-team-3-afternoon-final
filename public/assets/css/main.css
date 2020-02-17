@@ -222,9 +222,38 @@ p {
   margin: 0 0.625rem;
 }
 
-a:visited {
-  color: #fff;
+html {
+  font-size: 16px;
+}
+
+body * {
+  margin: 0px;
+  padding: 0px;
+}
+
+ahover {
+  color: #000;
+  -webkit-transition: all 0.7s ease;
+  transition: all 0.7s ease;
+}
+
+avisited {
+  color: white;
   text-decoration: none;
+}
+
+.container {
+  text-align: center;
+  margin: auto;
+  padding: 15px;
+  max-width: 300px;
+  width: 100%;
+}
+
+.container-footer {
+  border-top: solid grey 1px;
+  border-width: 100%;
+  padding: 0;
 }
 
 .container-header {
@@ -289,7 +318,7 @@ a:visited {
 
 .hero {
   background-color: #099d8d;
-  background-image: url(/_src/assets/images/IMG_20200207_175627.jpg);
+  background-image: url(../images/IMG_20200207_175627.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -324,42 +353,61 @@ a:visited {
   position: relative;
   text-align: left;
   padding: 0.9375rem;
-}/* A partir de aqui es responisve *//* @import 'layouts/aboutus'; */.strengths {
-  background-color: #b8b8b9;
+}/* A partir de aqui es responisve */.aboutus {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  position: relative;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 
-.strengths .strengths__triangle {
-  width: 1.875rem;
-  height: 1.875rem;
-  background-color: white;
-  -webkit-transform: rotate(45deg);
-  transform: rotate(45deg);
-  position: absolute;
-  top: -0.9375rem;
+.container .ab-header h1 {
+  color: #099d8d;
+  font-family: "Rubik", sans-serif;
+  font-size: 24px;
+  text-align: center;
+  line-height: 45px;
+}
+
+.container .ab-header p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  text-align: center;
+  line-height: 24px;
+  color: #54585a;
+}/* Fin estilos aboutus */.strengths {
+  background-color: #b8b8b9;
+  position: relative;
 }
 
 .strengths h2 {
   color: #099d8d;
   font-size: 24px;
   font-family: "Rubik", sans-serif;
-  font-weight: 31.25rem;
-  margin: 0.9375rem;
+  font-weight: 500;
+  margin: 15px;
 }
 
 .strengths p {
-  padding-bottom: 1.875rem;
+  padding-bottom: 30px;
   font-size: 16px;
   font-family: "Open Sans", sans-serif;
   color: #54585a;
   text-align: center;
-  line-height: 1.5rem;
+  line-height: 24px;
+}
+
+.triangulo {
+  width: 30px;
+  height: 30px;
+  background-color: white;
+  -webkit-transform: translateX(-50%) rotate(45deg);
+  transform: translateX(-50%) rotate(45deg);
+  position: absolute;
+  top: -15px;
+  left: 50%;
 }
 
 .footer {
@@ -464,6 +512,10 @@ padding: 5px; YA
     }
 }
  */@media all and (min-width: 768px) {
+  .container {
+    max-width: 700px;
+  }
+
   .container-header {
     position: fixed;
     width: 100vw;
@@ -489,9 +541,9 @@ padding: 5px; YA
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    -webkit-box-align: stretch;
-    -ms-flex-align: stretch;
-    align-items: stretch;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
     max-width: 700px;
   }
 
@@ -500,7 +552,7 @@ padding: 5px; YA
     padding: 1.8125rem 0px;
   }
 
-  .header .main-menu .group {
+  .header .group {
     background-color: transparent;
   }
 
@@ -517,17 +569,6 @@ padding: 5px; YA
     width: 441px;
   }
 
-  .strengths .strengths__box {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-
-  .strengths div {
-    max-width: 50%;
-    padding: 15px 0px;
-  }
-
   .strengths h2 {
     margin: 0px;
     padding: 15px;
@@ -535,6 +576,17 @@ padding: 5px; YA
 
   .strengths p {
     margin: 0 15px;
+  }
+
+  .strengths__box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  .strengths__box div {
+    max-width: 50%;
+    padding: 15px 0px;
   }
 
   .footer {
