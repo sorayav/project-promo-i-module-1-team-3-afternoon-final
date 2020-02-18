@@ -441,6 +441,7 @@ aselected {
   font-weight: 500;
   text-transform: uppercase;
   text-align: center;
+  margin: 6% 0 10% 0;
 }
 
 .adalabers-profile {
@@ -469,25 +470,24 @@ aselected {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  margin: 0%;
   padding: 2% 3%;
 }
 
 .adalabers-name {
   font-family: "Open Sans", sans-serif;
-  font-size: 22px;
+  font-size: 20px;
   color: #000;
   font-weight: 400;
-  margin-bottom: 0;
+  margin: 5% 0;
 }
 
 .adalabers-description {
   line-height: 1.6;
-  margin: 4% 0 0 0;
 }
 
 .adalabers p {
   font-family: "Open Sans", sans-serif;
+  font-size: 16px;
   color: #54585a;
   font-weight: 400;
 }
@@ -784,6 +784,10 @@ textarea input[type=submit] {
 }
 
 @media (min-width: 768px) {
+  .adalabers .adalabers-title {
+    margin: 3% 0 6% 0;
+  }
+
   .adalabers .adalabers-profile {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -812,16 +816,16 @@ textarea input[type=submit] {
     margin-right: 0%;
   }
 
+  .adalabers .adalabers-name {
+    margin: 3% 0;
+  }
+
   .adalabers .adalabers.box {
     width: 80%;
   }
 
   .adalabers .adalabers.box.end {
     text-align: right;
-  }
-
-  .adalabers .adalabers-description {
-    margin-top: 2%;
   }
 
   .adalabers .adalabers-links {
@@ -964,8 +968,11 @@ textarea input[type=submit] {
 }
 
 @media (min-width: 1200px) {
+  .adalabers .adalabers-title {
+    margin: 0 0 6% 0;
+  }
+
   .adalabers .adalabers-profile {
-    margin: auto;
     -webkit-box-align: start;
     -ms-flex-align: start;
     align-items: flex-start;
