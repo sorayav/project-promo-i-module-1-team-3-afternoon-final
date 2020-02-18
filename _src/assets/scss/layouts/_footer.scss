@@ -5,12 +5,14 @@
     align-content: center;
     padding:30px;
     color:$strengthsColor;
-    font-size: var(--text-content-size);
+    font-size: $fontSizeBody;
     text-align:center;
-    font-family: var(--opensans);
+    font-family: $fontFamilyBody;
     border-width: 100%; 
         .footer-nav{
-            margin-left:-35px;
+            ul{
+                padding:5px;
+            }
             li{
                 list-style-type:none;
                 padding: 5px;
@@ -20,17 +22,18 @@
                 font-weight: bold;
                 text-decoration: none;
                     &:hover{
-                        color: var(--black);
+                        color: $bodyImportantColor;
                         transition: all 0.7s ease;
                 }
-        }       
+        }     
 
       }
       .footer-logo{
         img{
             width:120px;
         }
-    } /* no sé hacerlo de otra manera */
+
+    } 
 
         @media all and (min-width:$tablet){
         height:auto;
@@ -50,61 +53,3 @@
             }
         }
     } 
-
-/* .footer{
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    padding:30px;
-    color:$strengthsColor;
-    font-size: var(--text-content-size);
-    text-align:center;
-    font-family: var(--opensans);
-    border-width: 100%; YA
-}
-
-.footer-nav ul li a{
-    color:$bodyColor;
-    font-weight: bold;
-    color:$bodyColor;
-    font-weight: bold; YA
-}
-.footer-nav ul li a:hover{
-    color: var(--black);
-    transition: all 0.7s ease;
-}
-.footer-logo img{
-    width: 120px;
-}
-.footer-nav ul li{
-list-style-type:none;
-padding: 5px; YA
-}
-.footer-nav{
-    margin-left:-35px; YA
-}
-@media all and (min-width:768px){
-    .footer{
-        height:auto;
-        display:flex;
-        flex-direction: row;
-        color:var(--light-gray);
-        font-size: var(--text-content-size);
-        text-align:right;
-        font-family: var(--opensans);
-        position:relative;
-        justify-content: space-between;
-        padding: 3% 6%;
-    }
-    .footer-logo img{
-        top:100px;
-    }
-    .footer-logo
-        position:absolute;
-        left:5.6%;
-        top:30%;
-        z-index:-1;
-    }
-}
- */
