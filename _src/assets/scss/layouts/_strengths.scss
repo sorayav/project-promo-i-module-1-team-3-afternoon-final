@@ -1,6 +1,7 @@
 .strengths {
-    background-color: $strengthsColor;
+    background-color: rgba($strengthsColor, 0.2);
     position: relative;
+    z-index: -1;
 
     & h2 {
         color: $headerColor;

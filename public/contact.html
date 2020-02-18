@@ -5,6 +5,15 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>Contacto</title>
+        <!-- <style>
+
+      :target {
+
+        text-decoration-line: underline;
+
+    }
+
+    </style> -->
         <link rel="icon" href="./favicon.png" />
         <link rel="stylesheet" href="./assets/css/main.css" />
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600|Rubik:400,500&display=swap"
@@ -17,18 +26,18 @@
         <div class="container-header">
             <header class="header">
                 <div class="group">
-                     <h1 class="h1header"><a href="./index.html">COLLAPSING MARGINS</a></h1>
+                     <h1 class="h1header"><a title="Nombre del equipo" href="./index.html">COLLAPSING MARGINS</a></h1>
 
                 </div>
                 <nav class="main-menu">
                     <ul>
-                        <li> <a href="#aboutus">EQUIPO</a>
+                        <li> <a title="Menu equipo" id="equipo" href="./#equipo">EQUIPO</a>
 
                         </li>
-                        <li> <a href="#adalabers">QUIENES SOMOS</a>
+                        <li> <a title="Menu quienes somos" id="quienessomos" href="./#quienessomos">QUIÉNES SOMOS</a>
 
                         </li>
-                        <li> <a class="contact-current-link" href="./contact.html">CONTACTO</a>
+                        <li> <a title="menu contacto" id="contacto" href="./contact.html">CONTACTO</a>
 
                         </li>
                     </ul>
@@ -44,7 +53,7 @@
                 <div class="footer-contact">Todos los campos marcados con <span class="asterik">*</span> son obligatorios</div>
             </div>
         </section>
-        <form class="form" action="/signup" method="post">
+        <form class="form" action="https://formspree.io/mknrdqrk" method="post">
             <div class="container-form">
                 <label for="full-name">Nombre completo <span class="asterik">*</span>
                 </label>
@@ -63,7 +72,9 @@
                 </label>
                 <textarea id="message" placeholder="¿Qué necesitas?" name="message" rows="8"
                 width="100%" required></textarea>
-                <input type="submit" value="Enviar" />
+                <div class="button-contact">
+                    <input type="submit" value="Enviar" />
+                </div>
             </div>
         </form>
         <div class=footer__footer>
