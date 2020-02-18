@@ -1,0 +1,29 @@
+
+.aboutus {
+    display: flex;
+    flex-direction: column;
+}
+    .container{
+        .ab-header{
+            h1 {
+                color:$headerColor;
+                font-family: $fontFamilyTitle;
+                font-size: $fontSizeTitle;
+                text-align: center;
+                line-height: 45px;
+            }
+        
+            p{
+                font-family: $fontFamilyBody;
+                font-size: $fontSizeBody;
+                text-align: center;
+                line-height: 24px;
+                color: $bodyColor;
+            }
+    }
+
+}
+
+
+
+/* Fin estilos aboutus */

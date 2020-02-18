@@ -1,0 +1,53 @@
+html {
+    font-size: 16px;
+}
+
+body * {
+    margin: 0px;
+    padding: 0px;
+}
+
+a {
+    text-decoration: none;
+    &:hover {
+    color: $bodyImportantColor;
+    transition: all 0.7s ease;
+    }
+    &visited {
+        color: white;
+        text-decoration: none;
+    }
+    &selected {
+        active: $bodyImportantColor;
+    }
+}
+
+.container {
+    text-align: center;
+    margin: auto;
+    padding: 15px;
+    max-width: 300px;
+    width: 100%;
+    
+    @include forTablet {
+        max-width: 700px;
+    }
+/*changes*/
+    @include forPc {
+        max-width: 600px;
+    }
+/*changes*/
+}
+
+.container-footer {
+    border-top: solid grey 1px;
+    border-width: 100%;
+    padding: 0;
+}
+
+@include forPc {
+    .container-adalabers {
+        width: 100%;
+        max-width: 900px;
+    }
+}

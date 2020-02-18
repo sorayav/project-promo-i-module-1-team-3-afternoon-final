@@ -1,0 +1,51 @@
+.strengths {
+    background-color: $strengthsColor;
+    position: relative;
+
+    & h2 {
+        color: $headerColor;
+        font-size: $fontSizeTitle;
+        font-family: $fontFamilyTitle;
+        font-weight: 500;
+        margin: 15px;
+    }
+
+    & p {
+        padding-bottom: 30px;            
+        font-size: $fontSizeBody;
+        font-family: $fontFamilyBody;
+        color: $bodyColor;
+        text-align: center;
+        line-height: 24px;
+    }
+}
+
+.triangulo {
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    transform: translateX(-50%) rotate(45deg);
+    position: absolute;
+    top: -15px;
+    left:50%;
+}
+
+@include forTablet {
+    .strengths {
+        h2 {
+            margin: 0px;
+            padding: 15px;
+        }
+        p {
+            margin: 0 15px;
+        }
+    }
+    .strengths__box {
+        display: flex;
+
+        div {
+            max-width: 50%;
+            padding: 15px 0px;
+        }
+    }
+}
