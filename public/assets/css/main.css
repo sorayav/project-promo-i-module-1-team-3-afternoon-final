@@ -324,7 +324,31 @@ a:visited {
   position: relative;
   text-align: left;
   padding: 0.9375rem;
-}/* A partir de aqui es responisve *//* @import 'layouts/aboutus'; */.strengths {
+}/* A partir de aqui es responisve */.aboutus {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.container .ab-header h1 {
+  color: #099d8d;
+  font-family: "Rubik", sans-serif;
+  font-size: 24px;
+  text-align: center;
+  line-height: 45px;
+}
+
+.container .ab-header p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  text-align: center;
+  line-height: 24px;
+  color: #54585a;
+}/* Fin estilos aboutus */.strengths {
   background-color: #b8b8b9;
   display: -webkit-box;
   display: -ms-flexbox;
