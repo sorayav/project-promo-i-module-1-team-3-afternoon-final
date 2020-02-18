@@ -374,6 +374,7 @@ aselected {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
+  margin: 30px 0;
 }
 
 .container .ab-header h1 {
