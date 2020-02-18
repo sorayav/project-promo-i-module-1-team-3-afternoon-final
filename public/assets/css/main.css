@@ -294,27 +294,27 @@ aselected {
   padding: 0px;
   width: 100vw;
   margin: auto;
-  z-index: 10;
+  text-transform: uppercase;
 }
 
-.header .group {
+.group {
   opacity: 0.95;
   background-color: #099d8d;
   text-align: center;
 }
 
-.header .main-menu {
+.main-menu {
   padding: 0.9375rem;
   opacity: 0.9;
   background-color: #14d9c4;
   text-align: center;
 }
 
-.header .main-menu ul li {
+.main-menu ul li {
   display: inline;
 }
 
-.header .main-menu ul li a {
+.main-menu ul li a {
   font-size: 0.9375rem;
   font-family: "Rubik", sans-serif;
   font-weight: 500;
@@ -323,7 +323,7 @@ aselected {
   padding: 0.5rem;
 }
 
-.header .main-menu a:hover {
+.main-menu a:hover {
   color: #000;
   -webkit-transition: all 0.7s ease;
   transition: all 0.7s ease;
