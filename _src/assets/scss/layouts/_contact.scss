@@ -97,16 +97,18 @@
             padding: 10px 10px;
             margin: 15px 0;
             box-sizing: border-box;
-        
+
+    }
+    
+    .button-contact{
         input[type=submit]{
             border-radius: 5%;
-            background-color: $headerColor;
+            background-color: #099d8d;
             border: 0;
             color: white;
             text-transform: uppercase;
         }
-
-    } 
+    }
 
     
 

@@ -665,7 +665,7 @@ textarea {
   box-sizing: border-box;
 }
 
-textarea input[type=submit] {
+.button-contact input[type=submit] {
   border-radius: 5%;
   background-color: #099d8d;
   border: 0;
