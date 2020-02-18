@@ -110,11 +110,13 @@
     
 
     @media all and (min-width:768px) {
-        input[type=submit]{
-            width:200px;
-            position:absolute;
-            right: 0;}
+        .container-button {
+            text-align: right;
+            input[type=submit]{
+                width:200px;
+            }
         }
+    }
 
     // @mixin forTablet
     @media all and (min-width:1200px) {

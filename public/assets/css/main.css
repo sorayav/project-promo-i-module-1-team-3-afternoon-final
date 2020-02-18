@@ -294,6 +294,7 @@ aselected {
   padding: 0px;
   width: 100vw;
   margin: auto;
+  z-index: 10;
 }
 
 .header .group {
@@ -306,7 +307,6 @@ aselected {
   padding: 0.9375rem;
   opacity: 0.9;
   background-color: #14d9c4;
-  z-index: 10;
   text-align: center;
 }
 
@@ -393,6 +393,7 @@ aselected {
 }/* Fin estilos aboutus */.strengths {
   background-color: #b8b8b9;
   position: relative;
+  z-index: -1;
 }
 
 .strengths h2 {
@@ -540,6 +541,7 @@ aselected {
   text-align: center;
   font-family: var(--opensans);
   border-width: 100%;
+  border-top: 1px solid grey;
 }
 
 .footer .footer-nav {
@@ -828,10 +830,12 @@ textarea input[type=submit] {
     width: 100px;
   }
 
-  input[type=submit] {
+  .container-button {
+    text-align: right;
+  }
+
+  .container-button input[type=submit] {
     width: 200px;
-    position: absolute;
-    right: 0;
   }
 }
 
