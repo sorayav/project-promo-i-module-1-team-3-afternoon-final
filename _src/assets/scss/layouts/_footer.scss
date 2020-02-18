@@ -1,26 +1,32 @@
+.footer__footer{
+    border-top: 1px solid grey;
+}
 .footer{
-    display:flex;
-    flex-direction: column;
+    display:grid;
+    grid-template-columns:1fr;
     justify-content: center;
     align-content: center;
-    padding:30px;
     color:$strengthsColor;
     font-size: $fontSizeBody;
     text-align:center;
     font-family: $fontFamilyBody;
     border-width: 100%; 
+    position:relative;
+        .footer-aside{
+        margin-bottom:1%;
+        }
         .footer-nav{
-            ul{
-                padding:5px;
-            }
-            li{
-                list-style-type:none;
-                padding: 5px;
-             }
-            a{
-                color:$bodyColor;
-                font-weight: bold;
-                text-decoration: none;
+                ul{
+                    padding:8px;
+                }
+                    li{
+                        list-style-type:none;
+                        padding: 5px;
+                    }
+                a{
+                    color:$bodyColor;
+                    font-weight: bold;
+                    text-decoration: none;
                     &:hover{
                         color: $bodyImportantColor;
                         transition: all 0.7s ease;
@@ -35,21 +41,32 @@
 
     } 
 
-        @media all and (min-width:$tablet){
-        height:auto;
-        flex-direction: row;
-        text-align:right;
-        position:relative;
-        justify-content: space-between;
-        padding: 3% 6%;
-            .footer-logo{
-                position:absolute;
-                left:5.6%;
-                top:30%;
-                z-index:-1;
-                img{
-                    width:100px;
-                }
-            }
-        }
-    } 
+}
+@media all and(min-width:768px){
+    .footer{
+    grid-template-columns:1fr 1fr 1fr;
+    grid-template-rows:1fr;
+    grid-template-areas: 'footer-aside' 'footer-nav' 'footer-logo';
+}
+        .footer-aside{
+        grid-area:footer-aside;
+        grid-column:span 1;
+    }
+        .footer-logo{
+        grid-area:footer-logo;
+        grid-column: span 1;
+        position:absolute;
+        left:3.6%;
+        top:-80px;
+        z-index:-1;
+            img{
+             width:100px;
+    }
+}
+        .footer-nav{
+        grid-area:footer-nav;
+        grid-column:3;
+        grid-row:1;
+        text-align: right;
+    }
+}
