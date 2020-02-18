@@ -681,13 +681,13 @@ padding: 5px; YA
   color: #54585a;
   padding: 0;
   margin: 0;
+  z-index: -3;
 }
 
 .container-form {
   margin: auto;
   max-width: 300px;
   width: 100%;
-  position: relative;
 }
 
 label {
@@ -702,7 +702,7 @@ label .asterik {
 input {
   display: block;
   width: 100%;
-  padding: 10px 0px;
+  padding: 10px 10px;
   margin: 15px 0;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -711,7 +711,7 @@ input {
 textarea {
   display: block;
   width: 100%;
-  padding: 10px 0px;
+  padding: 10px 10px;
   margin: 15px 0;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -828,10 +828,13 @@ textarea input[type=submit] {
     width: 100px;
   }
 
-  input[type=submit] {
+  .button-contact {
+    text-align: right;
+  }
+
+  .button-contact input[type=submit] {
     width: 200px;
-    position: absolute;
-    right: 0;
+    display: inline;
   }
 }
 
@@ -959,12 +962,6 @@ textarea input[type=submit] {
     margin: 20px 0px;
   }
 
-  .form input[type="submit"] {
-    width: 200px;
-    position: absolute;
-    right: 0;
-  }
-
   .form .email {
     display: inline-block;
     margin-right: 45px;
@@ -1014,6 +1011,10 @@ textarea input[type=submit] {
     -webkit-box-ordinal-group: 5;
     -ms-flex-order: 4;
     order: 4;
+  }
+
+  .form .button-contact input[type=submit] {
+    width: 280px;
   }
 }
 

@@ -62,13 +62,14 @@
         color: $bodyColor;
         padding: 0;
         margin: 0;
+        z-index: -3;
     }
 
         .container-form{
             margin:auto;
             max-width: 300px;
             width: 100%;
-            position:relative;
+            
             
         }
 
@@ -85,7 +86,7 @@
         input{
             display:block;
             width: 100%;
-            padding: 10px 0px;
+            padding: 10px 10px;
             margin: 15px 0;
             box-sizing: border-box;
         }
@@ -93,7 +94,7 @@
         textarea{
             display:block;
             width: 100%;
-            padding: 10px 0px;
+            padding: 10px 10px;
             margin: 15px 0;
             box-sizing: border-box;
         
@@ -110,10 +111,15 @@
     
 
     @media all and (min-width:768px) {
-        input[type=submit]{
-            width:200px;
-            position:absolute;
-            right: 0;}
+
+        .button-contact{
+            text-align: right;
+            input[type=submit]{
+                width:200px;
+                display: inline;
+            }
+        }
+        
         }
 
     // @mixin forTablet
@@ -143,6 +149,8 @@
             max-width: 600px;
         } 
 
+       
+
         .form {
             input[type="email"]{
             display: inline-block;
@@ -156,11 +164,7 @@
             margin: 20px 0px;
             }
 
-            input[type="submit"]{
-                width:200px;
-                position:absolute;
-                right: 0;
-            }
+            
 
             .email{
                 display:inline-block;
@@ -189,6 +193,13 @@
         .container-short :nth-child(3){order:2;}
         .container-short :last-child{order:4;}
             
+        .button-contact{
+            input[type=submit]{
+                width:280px;
+                
+            }
+        }
         }
     }
+     
     
