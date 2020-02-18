@@ -235,7 +235,7 @@ a {
   text-decoration: none;
 }
 
-ahover {
+a:hover {
   color: #000;
   -webkit-transition: all 0.7s ease;
   transition: all 0.7s ease;
