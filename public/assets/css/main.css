@@ -222,13 +222,13 @@ p {
   margin: 0 0.625rem;
 }
 
-html {
-  font-size: 16px;
-}
-
 body * {
   margin: 0px;
   padding: 0px;
+}
+
+html {
+  font-size: 16px;
 }
 
 a {
@@ -247,7 +247,7 @@ avisited {
 }
 
 aselected {
-  active: #000;
+  active: white;
 }
 
 .container {
@@ -294,7 +294,11 @@ aselected {
   padding: 0px;
   width: 100vw;
   margin: auto;
+<<<<<<< HEAD
   text-transform: uppercase;
+=======
+  z-index: 10;
+>>>>>>> 224082648105a2541aff781b60e27b02eae3d993
 }
 
 .header .group {
@@ -307,7 +311,6 @@ aselected {
   padding: 0.9375rem;
   opacity: 0.9;
   background-color: #14d9c4;
-  z-index: 10;
   text-align: center;
 }
 
@@ -392,8 +395,9 @@ aselected {
   line-height: 24px;
   color: #54585a;
 }/* Fin estilos aboutus */.strengths {
-  background-color: #b8b8b9;
+  background-color: rgba(184, 184, 185, 0.2);
   position: relative;
+  z-index: -1;
 }
 
 .strengths h2 {
@@ -541,6 +545,7 @@ aselected {
   text-align: center;
   font-family: "Open Sans", sans-serif;
   border-width: 100%;
+  border-top: 1px solid grey;
 }
 
 .footer .footer-nav ul {
