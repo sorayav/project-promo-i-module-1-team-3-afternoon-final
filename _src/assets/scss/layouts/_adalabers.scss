@@ -13,6 +13,7 @@
         font-weight: 500;
         text-transform: uppercase;
         text-align: center;
+        margin: 6% 0 10% 0;
     }
 
     &-profile {
@@ -27,25 +28,24 @@
     &-box {
         display: flex;
         flex-direction: column;
-        margin: 0%;
         padding: 2% 3%; 
     }
 
     &-name {
         font-family: $fontFamilyBody;
-        font-size: $fontSizeSubtitle;
+        font-size: $fontSizeBodyImportant;
         color: $bodyImportantColor;
         font-weight: 400;
-        margin-bottom: 0;        
+        margin: 5% 0;        
     }
 
     &-description {
         line-height: 1.6;
-        margin: 4% 0 0 0;
     }
 
     & p {
         font-family: $fontFamilyBody;
+        font-size: $fontSizeBody;
         color: $bodyColor;
         font-weight: 400;
     }
@@ -88,6 +88,10 @@
 @media (min-width: $tablet) {
 
 .adalabers {
+    &-title {
+        margin: 3% 0 6% 0;
+    }
+
     &-profile {
         flex-direction: row;
         
@@ -110,16 +114,17 @@
         }
     }
 
+    &-name {
+        margin: 3% 0;
+
+    }
+
     &.box {
         width: 80%;
     
         &.end {
         text-align: right;
         }
-    }
-
-    &-description {
-        margin-top: 2%;
     }
 
     &-links {
@@ -139,8 +144,11 @@
 @media (min-width: $pc) {
     
     .adalabers {
+        &-title {
+            margin: 0 0 6% 0;
+        }
+
         &-profile {
-        margin: auto;
         align-items: flex-start;
         }
 

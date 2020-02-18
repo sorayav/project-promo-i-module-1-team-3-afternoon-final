@@ -1,20 +1,10 @@
-// .h1header a:hover{
-//     color: $bodyImportantColor;
-//     transition: all 0.7s ease;
-// }
-
-// a:visited {
-//   color: $menuColor;
-//   text-decoration: none;
-// }
-
 .container-header {
   font-family: $fontFamilyTitle;
   font-weight: 500;
   font-style: normal;
   letter-spacing: normal;
 
-  & .h1header {
+  .h1header {
     font-size: rem(16);
     padding: rem(20);
     color: $menuColor;
@@ -23,8 +13,8 @@
     & a {
       color: white;
       &:hover {
-      color: $bodyImportantColor;
-      transition: all 0.7s ease;
+        color: $bodyImportantColor;
+        transition: all 0.7s ease;
       }
     }
   }
@@ -53,7 +43,7 @@
     & ul li {
       display: inline;
 
-       & a {
+      & a {
         font-size: rem(15);
         font-family: $fontFamilyTitle;
         font-weight: 500;
@@ -69,21 +59,6 @@
     }
   }
 }
-
-// .main-menu ul li {
-//   display: inline;
-
-  // & ul li a {
-  //   font-size: rem(15);
-  //   font-family: $fontFamilyTitle;
-  //   font-weight: 500;
-  //   font-style: normal;
-  //   color: $menuColor;
-  //   padding: rem(8);
-  // }
-
-
-// Aqui empieza el hero
 
 .hero {
   background-color: $headerColor;
@@ -130,7 +105,7 @@
     opacity: 0.95;
     height: 60px;
 
-    & h1 {
+    .h1header {
       padding: rem(20) 0px;
     }
   }
@@ -145,12 +120,10 @@
 
     .main-menu {
       background-color: transparent;
-      padding: rem(29) 0px;
     }
-      .group {
-        background-color: transparent;
-      }
-    
+    .group {
+      background-color: transparent;
+    }
   }
 
   .hero {
@@ -187,6 +160,3 @@
     }
   }
 }
-//   .whitebox p {
-//     font-size: rem(20);
-//   }
