@@ -1,6 +1,6 @@
 # Welcome to Collapsing Margings website! # 
 
-:bulb: This project is part of [Adalab](https://adalab.es) curriculum. The goal was to create a website with information about our team and ourselves individually, according to the client needs, and it features a main page and a second page with a functional contact form.
+:bulb: This project is part of [Adalab](https://adalab.es) curriculum. The goal was to create a responsive website with information about our team and ourselves individually, according to the client needs, and it features a main page and a second page with a functional contact form.
 
 ## Tech used
 
