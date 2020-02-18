@@ -25,13 +25,9 @@
   padding: 0px;
   width: 100vw;
   margin: auto;
-<<<<<<< HEAD
   text-transform: uppercase;
   
-  
-=======
-  z-index: 10;
->>>>>>> 224082648105a2541aff781b60e27b02eae3d993
+}
 
   .group {
     opacity: 0.95;
@@ -64,7 +60,7 @@
       transition: all 0.7s ease;
     }
   }
-}
+
 
 .hero {
   background-color: $headerColor;
