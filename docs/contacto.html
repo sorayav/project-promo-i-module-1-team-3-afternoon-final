@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+    
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Collapsing Margins</title>
+        <link rel="icon" href="./favicon.png" />
+        <link rel="stylesheet" href="./assets/css/main.css" />
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600|Rubik:400,500&display=swap"
+        rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        crossorigin="anonymous" />
+    </head>
+    
+    <body>
+        <div class="container-header">
+            <header class="header">
+                <div class="group">
+                     <h1 class="h1header"><a title="Nombre del equipo" href="./index.html">COLLAPSING MARGINS</a></h1>
+
+                </div>
+                <nav class="main-menu">
+                    <ul>
+                        <li> <a title="Ir a equipo" href="./#equipo">EQUIPO</a>
+
+                        </li>
+                        <li> <a title="Ir a quienes somos" href="./#quienessomos">QUIÉNES SOMOS</a>
+
+                        </li>
+                        <li> <a title="Ir a contacto" id="contacto" href="./contacto.html">CONTACTO</a>
+
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+        </div>
+        <section class="hero-contact"></section>
+        <section class="main-contact" id="main-contact">
+            <div class="container">
+                 <h1>CONTACTO</h1>
+                <p>Para cualquier consultar, rellena el siguiente formulario y nos pondremos
+                    en contacto contigo.</p>
+                <div class="footer-contact">Todos los campos marcados con <span class="asterik">*</span> son obligatorios</div>
+            </div>
+        </section>
+        <form class="form" action="https://formspree.io/mknrdqrk" method="post">
+            <div class="container-form">
+                <label for="full-name">Nombre completo <span class="asterik">*</span>
+                </label>
+                <input id="full-name" placeholder="Nombre..." type="text" name="full-name"
+                required width="100%" />
+                <div class="container-short">
+                    <label for="email" class="email">Email <span class="asterik">*</span>
+                    </label>
+                    <input id="email" placeholder="nombre.apellidos@mail.com" type="email"
+                    name="email" reuired/>
+                    <label for="phone-number" class="tel">Teléfono</label>
+                    <input id="phone-number" placeholder="Ej:123456789" type="tel"
+                    name="phone-number" />
+                </div>
+                <label for="message">Mensaje <span class="asterik">*</span>
+                </label>
+                <textarea id="message" placeholder="¿Qué necesitas?" name="message" rows="8"
+                width="100%" required></textarea>
+                <div class="button-contact">
+                    <input type="submit" value="Enviar" />
+                </div>
+            </div>
+        </form>
+        <div class=footer__footer>
+            <div class="container container-adalabers">
+                <footer class="footer">
+                    <aside class="footer-aside">
+                        <p><small>Collapsing margins © 2020</small>
+
+                        </p>
+                    </aside>
+                    <nav class="footer-nav">
+                        <ul>
+                            <li> <a href="./#equipo" title="equipo">EQUIPO</a>
+
+                            </li>
+                            <li> <a href="#quienessomos" title="quienes somos">QUIÉNES SOMOS</a>
+
+                            </li>
+                            <li> <a href="./contacto.html" title="contacto">CONTACTO</a>
+
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="footer-logo"> <a href="./#home" title="home">
+            <img src= "./assets/images/logo.png" alt="logo" title="logo_adalab">
+        </a> 
+                    </div>
+                </footer>
+            </div>
+        </div>
+    </body>
+
+</html>
