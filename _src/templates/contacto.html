@@ -1,41 +1,45 @@
 <!DOCTYPE html>
-    <html lang="es">
+<html lang="es">
 
-        <partial src="_head.html" title="Contacto"></partial>
-    <body>
-        <partial src="_header.html" label="Header"></partial>
-        <section class="hero-contact">
-        
-        </section>
+<partial src="_head.html" title="Contacto"></partial>
 
-        <section class="main-contact" id="main-contact">
-            <div class="container">
-                <h1>CONTACTO</h1>
-                <p>Para cualquier consultar, rellena el siguiente formulario y nos pondremos en contacto contigo.</p>
-                <div class="footer-contact">Todos los campos marcados con <span class="asterik">*</span> son obligatorios</div>
+<body>
+    <partial src="_header.html" label="Header"></partial>
+    <section class="hero-contact">
+
+    </section>
+
+    <section class="main-contact" id="main-contact">
+        <div class="container">
+            <h1>CONTACTO</h1>
+            <p>Para cualquier consultar, rellena el siguiente formulario y nos pondremos en contacto contigo.</p>
+            <div class="footer-contact">Todos los campos marcados con <span class="asterik">*</span> son obligatorios
             </div>
-            
-
-        </section>
+        </div>
 
 
-        <form class="form" action="https://formspree.io/mknrdqrk" method="post">
-            <div class="container-form">
+    </section>
+
+
+    <form class="form" action="https://formspree.io/mknrdqrk" method="post">
+        <div class="container-form">
             <label for="full-name">Nombre completo <span class="asterik">*</span></label>
-            <input id="full-name" placeholder="Nombre..." type="text" name="full-name" required width="100%"/>
+            <input id="full-name" placeholder="Nombre..." type="text" name="full-name" required width="100%" />
             <div class="container-short">
-            <label for="email" class="email">Email <span class="asterik">*</span></label>
-            <input id="email" placeholder="nombre.apellidos@mail.com" type="email" name="email" reuired/>
-            <label for="phone-number" class="tel">Teléfono</label>
-            <input id="phone-number" placeholder="Ej:123456789" type="tel" name="phone-number" />
+                <label for="email" class="email">Email <span class="asterik">*</span></label>
+                <input id="email" placeholder="nombre.apellidos@mail.com" type="email" name="email" required />
+                <label for="phone-number" class="tel">Teléfono</label>
+                <input id="phone-number" placeholder="Ej:123456789" type="tel" name="phone-number" />
             </div>
             <label for="message">Mensaje <span class="asterik">*</span></label>
-            <textarea id="message" placeholder="¿Qué necesitas?" name="message" rows="8" width="100%" required></textarea>  
+            <textarea id="message" placeholder="¿Qué necesitas?" name="message" rows="8" width="100%"
+                required></textarea>
             <div class="button-contact">
-            <input type="submit" value="Enviar" />
+                <input type="submit" value="Enviar" />
             </div>
-            </div>
-          </form>
-          <partial src="_footer.html" label="Footer"></partial>
-    </body>
-    </html>
+        </div>
+    </form>
+    <partial src="_footer.html" label="Footer"></partial>
+</body>
+
+</html>
