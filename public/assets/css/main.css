@@ -644,6 +644,10 @@ a {
   width: 100%;
 }
 
+.main-contact .container .footer-contact .asterik {
+  color: #14d9c4;
+}
+
 .form {
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
