@@ -13,18 +13,18 @@
     border-width: 100%; 
     position:relative;
         .footer-aside{
-        margin-bottom:1%;
+            margin-bottom:1%;
         }
 
         .footer-nav{
-                ul{
+                 & ul{
                     padding:8px;
                 }
-                    li{
+                   & li{
                         list-style-type:none;
                         padding: 5px;
                     }
-                a{
+               & a{
                     color:$bodyColor;
                     font-weight: bold;
                     text-decoration: none;
@@ -43,7 +43,7 @@
     } 
 
 }
-@media all and(min-width:768px){
+@include forTablet{
     .footer{
     grid-template-columns:1fr 1fr 1fr;
     grid-template-rows:1fr;
@@ -69,5 +69,11 @@
         grid-column:3;
         grid-row:1;
         text-align: right;
+    }
+}
+@include forPc{
+    .footer-logo{
+        position:absolute;
+        left:6.5%;
     }
 }
