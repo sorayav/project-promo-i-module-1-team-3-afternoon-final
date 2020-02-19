@@ -295,26 +295,27 @@ aselected {
   width: 100vw;
   margin: auto;
   text-transform: uppercase;
+ /* A partir de aqui es responisve */;
 }
 
-.group {
+.header .group {
   opacity: 0.95;
   background-color: #099d8d;
   text-align: center;
 }
 
-.main-menu {
+.header .main-menu {
   padding: 0.9375rem;
   opacity: 0.9;
   background-color: #14d9c4;
   text-align: center;
 }
 
-.main-menu ul li {
+.header .main-menu ul li {
   display: inline;
 }
 
-.main-menu ul li a {
+.header .main-menu ul li a {
   font-size: 0.9375rem;
   font-family: "Rubik", sans-serif;
   font-weight: 500;
@@ -323,13 +324,13 @@ aselected {
   padding: 0.5rem;
 }
 
-.main-menu a:hover {
+.header .main-menu a:hover {
   color: #000;
   -webkit-transition: all 0.7s ease;
   transition: all 0.7s ease;
 }
 
-.hero {
+.header .hero {
   background-color: #099d8d;
   background-image: url(../images/IMG_20200207_175627.jpg);
   background-position: center;
@@ -344,7 +345,7 @@ aselected {
   z-index: -1;
 }
 
-.hero .textbox {
+.header .hero .textbox {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   width: 290px;
@@ -358,15 +359,17 @@ aselected {
   left: calc(50% - 145px);
 }
 
-.hero .textbox div {
+.header .hero .textbox div {
   height: 50%;
 }
 
-.whitebox p {
+.header .whitebox p {
   position: relative;
   text-align: left;
   padding: 0.9375rem;
-}/* A partir de aqui es responisve */.aboutus {
+}
+
+.aboutus {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -523,30 +526,32 @@ aselected {
   color: #000;
   -webkit-transition: all 0.7s ease;
   transition: all 0.7s ease;
-}/* End of Adalabers section */.footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+}/* End of Adalabers section */.footer__footer {
+  border-top: 1px solid grey;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: 1fr;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
   -ms-flex-line-pack: center;
   align-content: center;
-  padding: 30px;
   color: #b8b8b9;
   font-size: 16px;
   text-align: center;
   font-family: "Open Sans", sans-serif;
   border-width: 100%;
-  border-top: 1px solid grey;
+  position: relative;
+}
+
+.footer .footer-aside {
+  margin-bottom: 1%;
 }
 
 .footer .footer-nav ul {
-  padding: 5px;
+  padding: 8px;
 }
 
 .footer .footer-nav li {
@@ -679,7 +684,7 @@ textarea {
     max-width: 700px;
   }
 
-  .container-header {
+  .header .container-header {
     position: fixed;
     width: 100vw;
     background-color: #099d8d;
@@ -687,11 +692,11 @@ textarea {
     height: 60px;
   }
 
-  .container-header .h1header {
+  .header .container-header .h1header {
     padding: 1.25rem 0px;
   }
 
-  .header {
+  .header .header {
     position: relative;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -710,20 +715,20 @@ textarea {
     max-width: 700px;
   }
 
-  .header .main-menu {
+  .header .header .main-menu {
     background-color: transparent;
   }
 
-  .header .group {
+  .header .header .group {
     background-color: transparent;
   }
 
-  .hero .whitebox {
+  .header .hero .whitebox {
     position: relative;
     height: 421px;
   }
 
-  .hero .whitebox .textbox {
+  .header .hero .whitebox .textbox {
     left: 15px;
     bottom: 29px;
     opacity: 80%;
@@ -752,28 +757,34 @@ textarea {
   }
 
   .footer {
-    height: auto;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    text-align: right;
-    position: relative;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    padding: 3% 6%;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 'footer-aside' 'footer-nav' 'footer-logo';
   }
 
-  .footer .footer-logo {
+  .footer-aside {
+    grid-area: footer-aside;
+    grid-column: span 1;
+  }
+
+  .footer-logo {
+    grid-area: footer-logo;
+    grid-column: span 1;
     position: absolute;
-    left: 5.6%;
-    top: 30%;
+    left: 3.6%;
+    top: -80px;
     z-index: -1;
   }
 
-  .footer .footer-logo img {
+  .footer-logo img {
     width: 100px;
+  }
+
+  .footer-nav {
+    grid-area: footer-nav;
+    grid-column: 3;
+    grid-row: 1;
+    text-align: right;
   }
 
   .button-contact {
@@ -854,23 +865,23 @@ textarea {
     max-width: 900px;
   }
 
-  .header {
+  .header .header {
     max-width: 900px;
   }
 
-  .hero {
+  .header .hero {
     height: 550px;
   }
 
-  .hero .whitebox {
+  .header .hero .whitebox {
     height: 550px;
   }
 
-  .hero .whitebox p {
+  .header .hero .whitebox p {
     font-size: 1.25rem;
   }
 
-  .hero .whitebox p .textbox {
+  .header .hero .whitebox p .textbox {
     width: 574px;
     height: 90px;
   }
