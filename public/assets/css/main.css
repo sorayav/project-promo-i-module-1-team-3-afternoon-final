@@ -817,7 +817,7 @@ textarea {
 
   .button-contact input[type=submit] {
     width: 200px;
-    display: inline;
+    display: inline-block;
   }
 }
 
