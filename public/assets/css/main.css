@@ -228,27 +228,13 @@ body * {
 }
 
 html {
+  cursor: url(../images/cursor.png), auto;
   font-size: 16px;
   scroll-behavior: smooth;
 }
 
 a {
   text-decoration: none;
-}
-
-a:hover {
-  color: #000;
-  -webkit-transition: all 0.7s ease;
-  transition: all 0.7s ease;
-}
-
-avisited {
-  color: white;
-  text-decoration: none;
-}
-
-aselected {
-  active: white;
 }
 
 .container {

@@ -4,23 +4,13 @@ body * {
 }
 
 html {
+    cursor: url(../images/cursor.png), auto;
     font-size: 16px;
     scroll-behavior: smooth;
 }
 
 a {
     text-decoration: none;
-    &:hover {
-    color: $bodyImportantColor;
-    transition: all 0.7s ease;
-    }
-    &visited {
-        color: white;
-        text-decoration: none;
-    }
-    &selected {
-        active: white;
-    }
 }
 
 .container {
