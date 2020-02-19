@@ -57,7 +57,7 @@
         grid-area:footer-logo;
         grid-column: span 1;
         position:absolute;
-        left:3.6%;
+        left:3%;
         top:-80px;
         z-index:-1;
             img{
@@ -74,6 +74,6 @@
 @include forPc{
     .footer-logo{
         position:absolute;
-        left:6.5%;
+        left:6%;
     }
 }
