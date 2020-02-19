@@ -284,7 +284,7 @@ aselected {
   color: white;
 }
 
-.container-header .h1header a:hover {
+.container-header .h1header a:hover,.container-header .h1header a a:focus {
   color: #000;
   -webkit-transition: all 0.7s ease;
   transition: all 0.7s ease;
@@ -324,10 +324,22 @@ aselected {
   padding: 0.5rem;
 }
 
-.main-menu a:hover {
+.main-menu a:hover,.main-menu a:focus {
   color: #000;
   -webkit-transition: all 0.7s ease;
   transition: all 0.7s ease;
+}
+
+.main-menu a:hover::before {
+  content: " [ ";
+  font-weight: bold;
+  color: #fff;
+}
+
+.main-menu a:hover::after {
+  content: " ] ";
+  font-weight: bold;
+  color: #fff;
 }
 
 .hero {
@@ -337,7 +349,6 @@ aselected {
   background-size: cover;
   background-repeat: no-repeat;
   height: 421px;
- /*width: 100vw;*/
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -357,17 +368,33 @@ aselected {
   position: absolute;
   bottom: -40px;
   left: calc(50% - 145px);
-}
-
-.hero .textbox div {
-  height: 50%;
+  -webkit-animation-name: textbox;
+  animation-name: textbox;
+  -webkit-animation-duration: 5s;
+  animation-duration: 5s;
+  -webkit-animation-iteration-count: 1 .hero .textbox div;
+  animation-iteration-count: 1 .hero .textbox div;
+  animation-iteration-count-height: 50%;
 }
 
 .whitebox p {
   position: relative;
   text-align: left;
   padding: 0.9375rem;
-}/* A partir de aqui es responisve */.aboutus {
+}/* A partir de aqui es responisve */.hero .whitebox {
+  position: relative;
+  height: 421px;
+}
+
+.hero .whitebox .textbox {
+  left: 15px;
+  bottom: 29px;
+  opacity: 80%;
+  padding: 0.9375rem 1.875rem;
+  width: 441px;
+}
+
+.aboutus {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -733,19 +760,6 @@ textarea {
     background-color: transparent;
   }
 
-  .hero .whitebox {
-    position: relative;
-    height: 421px;
-  }
-
-  .hero .whitebox .textbox {
-    left: 15px;
-    bottom: 29px;
-    opacity: 80%;
-    padding: 0.9375rem 1.875rem;
-    width: 441px;
-  }
-
   .strengths h2 {
     margin: 0px;
     padding: 15px;
@@ -1030,6 +1044,26 @@ textarea {
     -webkit-box-pack: right;
     -ms-flex-pack: right;
     justify-content: right;
+  }
+}
+
+@-webkit-keyframes textbox {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes textbox {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
   }
 }
 

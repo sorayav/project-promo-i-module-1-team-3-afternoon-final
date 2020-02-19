@@ -12,7 +12,8 @@
 
     & a {
       color: white;
-      &:hover {
+      &:hover,
+      a:focus {
         color: $bodyImportantColor;
         transition: all 0.7s ease;
       }
@@ -26,7 +27,6 @@
   width: 100vw;
   margin: auto;
   text-transform: uppercase;
-  
 
   .group {
     opacity: 0.95;
@@ -34,33 +34,45 @@
     text-align: center;
   }
 }
-  .main-menu {
-    padding: rem(15);
-    opacity: 0.9;
-    background-color: $subHeaderColor;
-    
-    text-align: center;
+.main-menu {
+  padding: rem(15);
+  opacity: 0.9;
+  background-color: $subHeaderColor;
 
-    & ul li {
-      display: inline;
+  text-align: center;
 
-      & a {
-        font-size: rem(15);
-        font-family: $fontFamilyTitle;
-        font-weight: 500;
-        font-style: normal;
-        color: $menuColor;
-        padding: rem(8);
-      }
-    }
+  & ul li {
+    display: inline;
 
-    & a:hover {
-      color: $bodyImportantColor;
-      transition: all 0.7s ease;
+    & a {
+      font-size: rem(15);
+      font-family: $fontFamilyTitle;
+      font-weight: 500;
+      font-style: normal;
+      color: $menuColor;
+      padding: rem(8);
     }
   }
 
+  & a:hover,
+  a:focus {
+    color: $bodyImportantColor;
+    transition: all 0.7s ease;
+  }
+}
+.main-menu {
+  a:hover::before {
+    content: " [ ";
+    font-weight: bold;
+    color: $menuColor;
+  }
 
+  a:hover::after {
+    content: " ] ";
+    font-weight: bold;
+    color: $menuColor;
+  }
+}
 .hero {
   background-color: $headerColor;
   background-image: url(../images/IMG_20200207_175627.jpg);
@@ -68,7 +80,6 @@
   background-size: cover;
   background-repeat: no-repeat;
   height: 421px;
-  /*width: 100vw;*/
   display: flex;
   position: relative;
   z-index: -1;
@@ -84,6 +95,9 @@
     position: absolute;
     bottom: -40px;
     left: calc(50% - 145px);
+    animation-name: textbox;
+    animation-duration: 5s;
+    animation-iteration-count: 1
 
     & div {
       height: 50%;
@@ -95,6 +109,17 @@
   text-align: left;
   padding: rem(15);
 }
+
+@keyframes textbox {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+
 
 /* A partir de aqui es responisve */
 
@@ -126,18 +151,17 @@
       background-color: transparent;
     }
   }
-
-  .hero {
-    .whitebox {
-      position: relative;
-      height: 421px;
-      .textbox {
-        left: 15px;
-        bottom: 29px;
-        opacity: 80%;
-        padding: rem(15) rem(30);
-        width: 441px;
-      }
+}
+.hero {
+  .whitebox {
+    position: relative;
+    height: 421px;
+    .textbox {
+      left: 15px;
+      bottom: 29px;
+      opacity: 80%;
+      padding: rem(15) rem(30);
+      width: 441px;
     }
   }
 }
@@ -161,4 +185,3 @@
     }
   }
 }
-
