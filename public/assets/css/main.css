@@ -344,7 +344,7 @@ aselected {
 
 .hero {
   background-color: #099d8d;
-  background-image: url(../images/IMG_20200207_175627.jpg);
+  background-image: url(../images/foto_grupo.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -368,33 +368,23 @@ aselected {
   position: absolute;
   bottom: -40px;
   left: calc(50% - 145px);
-  -webkit-animation-name: textbox;
-  animation-name: textbox;
-  -webkit-animation-duration: 5s;
-  animation-duration: 5s;
-  -webkit-animation-iteration-count: 1 .hero .textbox div;
-  animation-iteration-count: 1 .hero .textbox div;
-  animation-iteration-count-height: 50%;
+}
+
+.hero .textbox div {
+  height: 50%;
 }
 
 .whitebox p {
   position: relative;
   text-align: left;
   padding: 0.9375rem;
-}/* A partir de aqui es responisve */.hero .whitebox {
-  position: relative;
-  height: 421px;
-}
-
-.hero .whitebox .textbox {
-  left: 15px;
-  bottom: 29px;
-  opacity: 80%;
-  padding: 0.9375rem 1.875rem;
-  width: 441px;
-}
-
-.aboutus {
+  -webkit-animation-name: textbox;
+  animation-name: textbox;
+  -webkit-animation-duration: 5s;
+  animation-duration: 5s;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+}/* A partir de aqui es responisve */.aboutus {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -758,6 +748,19 @@ textarea {
 
   .header .group {
     background-color: transparent;
+  }
+
+  .hero .whitebox {
+    position: relative;
+    height: 421px;
+  }
+
+  .hero .whitebox .textbox {
+    left: 15px;
+    bottom: 29px;
+    opacity: 80%;
+    padding: 0.9375rem 1.875rem;
+    width: 441px;
   }
 
   .strengths h2 {
