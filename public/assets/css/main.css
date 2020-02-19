@@ -295,7 +295,6 @@ aselected {
   width: 100vw;
   margin: auto;
   text-transform: uppercase;
- /* A partir de aqui es responisve */;
 }
 
 .header .group {
@@ -304,18 +303,18 @@ aselected {
   text-align: center;
 }
 
-.header .main-menu {
+.main-menu {
   padding: 0.9375rem;
   opacity: 0.9;
   background-color: #14d9c4;
   text-align: center;
 }
 
-.header .main-menu ul li {
+.main-menu ul li {
   display: inline;
 }
 
-.header .main-menu ul li a {
+.main-menu ul li a {
   font-size: 0.9375rem;
   font-family: "Rubik", sans-serif;
   font-weight: 500;
@@ -324,13 +323,13 @@ aselected {
   padding: 0.5rem;
 }
 
-.header .main-menu a:hover {
+.main-menu a:hover {
   color: #000;
   -webkit-transition: all 0.7s ease;
   transition: all 0.7s ease;
 }
 
-.header .hero {
+.hero {
   background-color: #099d8d;
   background-image: url(../images/IMG_20200207_175627.jpg);
   background-position: center;
@@ -345,7 +344,7 @@ aselected {
   z-index: -1;
 }
 
-.header .hero .textbox {
+.hero .textbox {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   width: 290px;
@@ -359,17 +358,15 @@ aselected {
   left: calc(50% - 145px);
 }
 
-.header .hero .textbox div {
+.hero .textbox div {
   height: 50%;
 }
 
-.header .whitebox p {
+.whitebox p {
   position: relative;
   text-align: left;
   padding: 0.9375rem;
-}
-
-.aboutus {
+}/* A partir de aqui es responisve */.aboutus {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -684,7 +681,7 @@ textarea {
     max-width: 700px;
   }
 
-  .header .container-header {
+  .container-header {
     position: fixed;
     width: 100vw;
     background-color: #099d8d;
@@ -692,11 +689,11 @@ textarea {
     height: 60px;
   }
 
-  .header .container-header .h1header {
+  .container-header .h1header {
     padding: 1.25rem 0px;
   }
 
-  .header .header {
+  .header {
     position: relative;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -715,20 +712,20 @@ textarea {
     max-width: 700px;
   }
 
-  .header .header .main-menu {
+  .header .main-menu {
     background-color: transparent;
   }
 
-  .header .header .group {
+  .header .group {
     background-color: transparent;
   }
 
-  .header .hero .whitebox {
+  .hero .whitebox {
     position: relative;
     height: 421px;
   }
 
-  .header .hero .whitebox .textbox {
+  .hero .whitebox .textbox {
     left: 15px;
     bottom: 29px;
     opacity: 80%;
@@ -865,23 +862,23 @@ textarea {
     max-width: 900px;
   }
 
-  .header .header {
+  .header {
     max-width: 900px;
   }
 
-  .header .hero {
+  .hero {
     height: 550px;
   }
 
-  .header .hero .whitebox {
+  .hero .whitebox {
     height: 550px;
   }
 
-  .header .hero .whitebox p {
+  .hero .whitebox p {
     font-size: 1.25rem;
   }
 
-  .header .hero .whitebox p .textbox {
+  .hero .whitebox p .textbox {
     width: 574px;
     height: 90px;
   }
