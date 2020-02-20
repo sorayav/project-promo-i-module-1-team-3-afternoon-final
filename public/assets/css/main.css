@@ -385,7 +385,8 @@ a {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  margin: 30px 0;
+  margin-bottom: 30px;
+  padding-top: 22.2%;
 }
 
 .container .ab-header h2 {
@@ -788,6 +789,10 @@ textarea {
     width: 441px;
   }
 
+  .aboutus {
+    padding: 4%;
+  }
+
   .container .ab-header h2 {
     color: #099d8d;
   }
@@ -926,8 +931,8 @@ textarea {
     position: fixed;
     bottom: 4%;
     right: 2%;
-    width: 20px;
-    height: 20px;
+    width: 25px;
+    height: 25px;
     border-radius: 50%;
     background-color: rgba(184, 184, 185, 0.5);
     color: black;
@@ -935,7 +940,7 @@ textarea {
     font-size: 30px;
     font-weight: bolder;
     border: solid 2px white;
-    padding: 11px;
+    padding: 10px;
     cursor: pointer;
   }
 
