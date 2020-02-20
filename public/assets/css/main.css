@@ -734,7 +734,6 @@ textarea {
 
 .hero-team {
   background-color: #099d8d;
-  background-image: url(../images/contacto.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -750,6 +749,31 @@ textarea {
   z-index: -1;
 }
 
+.hero-team-mg {
+  background-image: url(../images/maria_garvia_vaca.jpg);
+  background-position-y: 25%;
+}
+
+.hero-team-mb {
+  background-image: url(../images/maria_blanco_llama.jpg);
+}
+
+.hero-team-pr {
+  background-image: url(../images/patricia_ramos_oveja.jpg);
+}
+
+.hero-team-gv {
+  background-image: url(../images/gador_villanueva_cabra.jpg);
+}
+
+.hero-team-sv {
+  background-image: url(../images/soraya_valle_gallo.jpg);
+}
+
+.team {
+  padding: 20px 0;
+}
+
 .team h2 {
   color: #099d8d;
   font-family: "Rubik", sans-serif;
@@ -758,24 +782,15 @@ textarea {
 }
 
 .team .team-member-box {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  text-align: justify;
-  padding: 10px;
+  padding-top: 20px;
 }
 
 .team .team-member-box .team-member-description {
-  padding: 20px;
+  padding-top: 20px;
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
   color: #54585a;
+  text-align: justify;
 }
 
 .team .team-member-skills {
@@ -923,6 +938,23 @@ textarea {
   .button-contact input[type=submit] {
     width: 200px;
     display: inline-block;
+  }
+
+  .team .team-member-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .team .team-member-box .team-member-description {
+    padding-left: 20px;
   }
 }
 
