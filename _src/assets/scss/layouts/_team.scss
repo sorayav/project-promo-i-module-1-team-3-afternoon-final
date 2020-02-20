@@ -1,7 +1,6 @@
 .hero-team {
     background-color:$headerColor;
-    background-image: url(../images/contacto.jpg);
-    background-position: center;
+    background-position: center;;
     background-size: cover;
     background-repeat: no-repeat;
     height: 421px;
@@ -9,9 +8,26 @@
     display: flex;
     position: relative;
     justify-content: center;
-    z-index: -1;        
+    z-index: -1;
+    &-mg {
+        background-image: url(../images/maria_garvia_vaca.jpg);
+        background-position-y: 25%;
+    }
+    &-mb {
+        background-image: url(../images/maria_blanco_llama.jpg);
+    }
+    &-pr {
+        background-image: url(../images/patricia_ramos_oveja.jpg);
+    }
+    &-gv {    
+        background-image: url(../images/gador_villanueva_cabra.jpg);
+    }
+    &-sv {
+        background-image: url(../images/soraya_valle_gallo.jpg);
+    }    
 }
 .team {
+    padding: 20px 0;
     h2 {
         color: $headerColor;
         font-family: $fontFamilyTitle;
@@ -19,16 +35,22 @@
         font-weight: 500;
     }
     .team-member-box {
+        padding-top: 20px;
+        @include forTablet {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        text-align: justify;
-        padding: 10px;
+        text-align: center;
+            .team-member-description {
+                padding-left: 20px;
+            }
+        }
         .team-member-description {
-            padding: 20px;
+            padding-top: 20px;
             font-family: $fontFamilyBody;
             font-size: $fontSizeBody;
             color: $bodyColor;
+            text-align: justify;
         }
     }
     .team-member-skills {
