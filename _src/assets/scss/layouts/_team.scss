@@ -1,0 +1,53 @@
+.hero-team {
+    background-color:$headerColor;
+    background-image: url(../images/contacto.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 421px;
+    width: 100vw;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    z-index: -1;        
+}
+.team {
+    h2 {
+        color: $headerColor;
+        font-family: $fontFamilyTitle;
+        font-size: $fontSizeTitle;
+        font-weight: 500;
+    }
+    .team-member-box {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-align: justify;
+        padding: 10px;
+        .team-member-description {
+            padding: 20px;
+            font-family: $fontFamilyBody;
+            font-size: $fontSizeBody;
+            color: $bodyColor;
+        }
+    }
+    .team-member-skills {
+        text-align: justify;
+        ul {
+            padding-bottom: 20px;
+            li {
+                list-style-type: none;
+                font-family: $fontFamilyBody;
+                font-size: 14px;
+                color: $bodyColor;
+                h3 {
+                    color: $subHeaderColor;        
+                    font-size: $fontSizeBody;
+                    font-family: $fontFamilyBody;
+                    font-weight: 500;
+                    padding-top: 15px;
+                }
+            }
+        }
+    }
+}

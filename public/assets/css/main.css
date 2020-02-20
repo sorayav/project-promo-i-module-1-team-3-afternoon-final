@@ -732,6 +732,75 @@ textarea {
   transition: all 0.7s ease;
 }
 
+.hero-team {
+  background-color: #099d8d;
+  background-image: url(../images/contacto.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 421px;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  z-index: -1;
+}
+
+.team h2 {
+  color: #099d8d;
+  font-family: "Rubik", sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.team .team-member-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: justify;
+  padding: 10px;
+}
+
+.team .team-member-box .team-member-description {
+  padding: 20px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  color: #54585a;
+}
+
+.team .team-member-skills {
+  text-align: justify;
+}
+
+.team .team-member-skills ul {
+  padding-bottom: 20px;
+}
+
+.team .team-member-skills ul li {
+  list-style-type: none;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  color: #54585a;
+}
+
+.team .team-member-skills ul li h3 {
+  color: #14d9c4;
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 500;
+  padding-top: 15px;
+}
+
 @media all and (min-width: 768px) {
   .container {
     max-width: 700px;
