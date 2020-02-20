@@ -18,7 +18,7 @@
 
     .footer-nav{
         & ul{
-            padding:8px;
+            padding:12px;
         }
         & li{
             list-style-type:none;
@@ -68,9 +68,8 @@
         grid-area:footer-logo;
         grid-column: span 1;
         position:absolute;
-        left:3%;
-        top:-80px;
-        z-index:-1;
+        left:4%;
+        top:-60px;
             img{
              width:100px;
     }
@@ -85,6 +84,6 @@
 @include forPc{
     .footer-logo{
         position:absolute;
-        left:6%;
+        left:6.6%;
     }
 }

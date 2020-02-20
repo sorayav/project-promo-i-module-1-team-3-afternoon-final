@@ -573,7 +573,7 @@ a {
 }
 
 .footer .footer-nav ul {
-  padding: 8px;
+  padding: 12px;
 }
 
 .footer .footer-nav li {
@@ -832,9 +832,8 @@ textarea {
     grid-area: footer-logo;
     grid-column: span 1;
     position: absolute;
-    left: 3%;
-    top: -80px;
-    z-index: -1;
+    left: 4%;
+    top: -60px;
   }
 
   .footer-logo img {
@@ -971,7 +970,7 @@ textarea {
 
   .footer-logo {
     position: absolute;
-    left: 6%;
+    left: 6.6%;
   }
 
   .main-contact .container {
