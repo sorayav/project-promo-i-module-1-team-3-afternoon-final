@@ -40,6 +40,6 @@ Form with obligatory fields to fill, with option to return to the main page or t
 
 
 
-![alt text](https://github.com/Adalab/project-promo-i-module-1-team-3-afternoon-final/blob/master/_src/assets/images/Captura%20de%20pantalla%202020-02-19%20a%20las%2010.31.26.png) 
-![alt text](https://github.com/Adalab/project-promo-i-module-1-team-3-afternoon-final/blob/master/_src/assets/images/Captura%20de%20pantalla%202020-02-19%20a%20las%2010.31.42.png)
-![alt text](https://github.com/Adalab/project-promo-i-module-1-team-3-afternoon-final/blob/master/_src/assets/images/Captura%20de%20pantalla%202020-02-19%20a%20las%2010.32.01.png)
+![alt text](https://github.com/Adalab/project-promo-i-module-1-team-3-afternoon-final/blob/master/docs/assets/images/versionweb.png) 
+![alt text](https://github.com/Adalab/project-promo-i-module-1-team-3-afternoon-final/blob/master/docs/assets/images/versionmobile.png)
+![alt text](https://github.com/Adalab/project-promo-i-module-1-team-3-afternoon-final/blob/master/_src/assets/images/formfinal.png)
