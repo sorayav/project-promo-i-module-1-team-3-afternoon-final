@@ -756,6 +756,7 @@ textarea {
 
 .hero-team-mb {
   background-image: url(../images/maria_blanco_llama.jpg);
+  background-position-y: 30%;
 }
 
 .hero-team-pr {
