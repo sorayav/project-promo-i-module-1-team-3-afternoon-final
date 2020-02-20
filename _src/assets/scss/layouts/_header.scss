@@ -9,11 +9,13 @@
     padding: rem(20);
     color: $menuColor;
     margin-top: 0;
+    font-weight: 500;
 
     & a {
       color: white;
-      &:hover,
-      a:focus {
+      padding: 0.5rem;
+      &:hover,  
+      &:focus {
         color: $bodyImportantColor;
         transition: all 0.7s ease;
       }
@@ -92,6 +94,7 @@
     color: $bodyImportantColor;
     font-size: rem(18);
     font-family: $fontFamilyBody;
+    font-weight: 600;
     position: absolute;
     bottom: -40px;
     left: calc(50% - 145px);
@@ -104,7 +107,7 @@
 .whitebox p {
   position: relative;
   text-align: left;
-  padding: rem(15);
+  padding: rem(11.7);
   animation-name: textbox;
   animation-duration: 5s;
   animation-iteration-count: 1

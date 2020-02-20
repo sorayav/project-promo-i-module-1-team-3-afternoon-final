@@ -2,16 +2,24 @@
 .aboutus {
     display: flex;
     flex-direction: column;
-    margin: 30px 0;
+    margin-bottom: 30px;
+    padding-top: 22.2%;
+    @include forTablet {
+        padding: 4%;
+    }
 }
     .container{
         .ab-header{
             h2 {
-                color:$headerColor;
+                color:$subHeaderColor;
                 font-family: $fontFamilyTitle;
                 font-size: $fontSizeTitle;
+                font-weight: 500;
                 text-align: center;
                 line-height: 45px;
+                @include forTablet {
+                    color: $headerColor;
+                }
             }
         
             p{

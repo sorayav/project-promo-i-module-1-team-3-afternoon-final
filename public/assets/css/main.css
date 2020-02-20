@@ -237,6 +237,10 @@ a {
   text-decoration: none;
 }
 
+.buttontop {
+  display: none;
+}
+
 .container {
   text-align: center;
   margin: auto;
@@ -264,13 +268,15 @@ a {
   padding: 1.25rem;
   color: #fff;
   margin-top: 0;
+  font-weight: 500;
 }
 
 .container-header .h1header a {
   color: white;
+  padding: 0.5rem;
 }
 
-.container-header .h1header a:hover,.container-header .h1header a a:focus {
+.container-header .h1header a:hover,.container-header .h1header a:focus {
   color: #000;
   -webkit-transition: all 0.7s ease;
   transition: all 0.7s ease;
@@ -351,6 +357,7 @@ a {
   color: #000;
   font-size: 1.125rem;
   font-family: "Open Sans", sans-serif;
+  font-weight: 600;
   position: absolute;
   bottom: -40px;
   left: calc(50% - 145px);
@@ -363,7 +370,7 @@ a {
 .whitebox p {
   position: relative;
   text-align: left;
-  padding: 0.9375rem;
+  padding: 0.73125rem;
   -webkit-animation-name: textbox;
   animation-name: textbox;
   -webkit-animation-duration: 5s;
@@ -378,13 +385,15 @@ a {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  margin: 30px 0;
+  margin-bottom: 30px;
+  padding-top: 22.2%;
 }
 
 .container .ab-header h2 {
-  color: #099d8d;
+  color: #14d9c4;
   font-family: "Rubik", sans-serif;
   font-size: 24px;
+  font-weight: 500;
   text-align: center;
   line-height: 45px;
 }
@@ -403,7 +412,7 @@ a {
 
 .strengths h2 {
   color: #099d8d;
-  font-size: 24px;
+  font-size: 22px;
   font-family: "Rubik", sans-serif;
   font-weight: 500;
   margin: 15px;
@@ -564,7 +573,7 @@ a {
 }
 
 .footer .footer-nav ul {
-  padding: 8px;
+  padding: 12px;
 }
 
 .footer .footer-nav li {
@@ -572,13 +581,25 @@ a {
   padding: 5px;
 }
 
-.footer .footer-nav a {
+.footer .footer-nav li a:hover::before {
+  content: ' [ ';
+  font-weight: bold;
+  color: #099d8d;
+}
+
+.footer .footer-nav li a:hover::after {
+  content: ' ] ';
+  font-weight: bold;
+  color: #099d8d;
+}
+
+.footer .footer-nav li a {
   color: #54585a;
   font-weight: bold;
   text-decoration: none;
 }
 
-.footer .footer-nav a:hover {
+.footer .footer-nav li a:hover,.footer .footer-nav li a:focus {
   color: #000;
   -webkit-transition: all 0.7s ease;
   transition: all 0.7s ease;
@@ -618,6 +639,7 @@ a {
   color: #099d8d;
   font-family: "Rubik", sans-serif;
   font-size: 24px;
+  font-weight: 500;
   text-align: center;
   line-height: 45px;
 }
@@ -640,9 +662,13 @@ a {
   width: 100%;
 }
 
+.main-contact .container .footer-contact .asterik {
+  color: #14d9c4;
+}
+
 .form {
   font-family: "Open Sans", sans-serif;
-  font-size: 16px;
+  font-size: 14px;
   text-align: left;
   line-height: 24px;
   color: #54585a;
@@ -690,6 +716,20 @@ textarea {
   border: 0;
   color: white;
   text-transform: uppercase;
+}
+
+.button-contact input[type=submit]:hover {
+  color: #000;
+  font-weight: bold;
+  -webkit-transition: all 0.7s ease;
+  transition: all 0.7s ease;
+}
+
+.button-contact input[type=submit]:focus {
+  color: #000;
+  font-weight: bold;
+  -webkit-transition: all 0.7s ease;
+  transition: all 0.7s ease;
 }
 
 @media all and (min-width: 768px) {
@@ -749,6 +789,14 @@ textarea {
     width: 441px;
   }
 
+  .aboutus {
+    padding: 4%;
+  }
+
+  .container .ab-header h2 {
+    color: #099d8d;
+  }
+
   .strengths h2 {
     margin: 0px;
     padding: 15px;
@@ -784,9 +832,8 @@ textarea {
     grid-area: footer-logo;
     grid-column: span 1;
     position: absolute;
-    left: 3%;
-    top: -80px;
-    z-index: -1;
+    left: 4%;
+    top: -60px;
   }
 
   .footer-logo img {
@@ -878,6 +925,28 @@ textarea {
     max-width: 900px;
   }
 
+  .buttontop {
+    display: block;
+    position: fixed;
+    bottom: 4%;
+    right: 2%;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: rgba(184, 184, 185, 0.5);
+    color: black;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bolder;
+    border: solid 2px white;
+    padding: 10px;
+    cursor: pointer;
+  }
+
+  .buttontop:hover {
+    color: white;
+  }
+
   .header {
     max-width: 900px;
   }
@@ -901,7 +970,7 @@ textarea {
 
   .footer-logo {
     position: absolute;
-    left: 6%;
+    left: 6.6%;
   }
 
   .main-contact .container {

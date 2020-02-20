@@ -28,6 +28,7 @@
                     color: $headerColor;
                     font-family: $fontFamilyTitle;
                     font-size: $fontSizeTitle;
+                    font-weight: 500;
                     text-align: center;
                     line-height: 45px;
                     }
@@ -46,17 +47,19 @@
                     color: $bodyColor;
                     padding:0px;
                     width: 100%;
+
+                    .asterik {
+                        color:$subHeaderColor;
+                    }
                 }              
             }
 
                 
         } 
-    
-
 
     .form{
         font-family: $fontFamilyBody;
-        font-size: $fontSizeBody;
+        font-size: 14px;
         text-align: left;
         line-height: 24px;
         color: $bodyColor;
@@ -107,8 +110,30 @@
             border: 0;
             color: white;
             text-transform: uppercase;
+            &:hover {
+                color: $bodyImportantColor;
+                font-weight: bold;
+                transition: all 0.7s ease;
+            }
+            &:focus{
+                color: $bodyImportantColor;
+                font-weight: bold;
+                transition: all 0.7s ease;
+            }
         }
+        // input:hover::before {
+        //     content: " [ ";
+        //     font-weight: bold;
+        //     color: white;
+        // }
+        // input:hover::after {
+        //     content: " ] ";
+        //     font-weight: bold;
+        //     color: white;
+        // }
     }
+
+
 
     
 
@@ -135,7 +160,6 @@
 
         } 
     }
-        
 
         .form {
             display:flex;
@@ -150,8 +174,6 @@
             max-width: 600px;
         } 
 
-       
-
         .form {
             input[type="email"]{
             display: inline-block;
@@ -165,8 +187,6 @@
             margin: 20px 0px;
             }
 
-            
-
             .email{
                 display:inline-block;
                 // width:400px;
@@ -179,8 +199,6 @@
                 margin-left:0;
                 margin-right: 0;
             }
-
-        
 
             .container-short{
                 display:flex;
@@ -202,5 +220,3 @@
         }
         }
     }
-     
-    
