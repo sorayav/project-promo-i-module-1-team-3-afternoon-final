@@ -12,7 +12,7 @@ a {
 }
 
 .buttontop {
-    color: transparent;
+    display: none;
 }
 
 .container {
@@ -45,6 +45,7 @@ a {
     }
 
     .buttontop {
+        display: block;
         position: fixed;
         bottom: 4%;
         right: 2%;

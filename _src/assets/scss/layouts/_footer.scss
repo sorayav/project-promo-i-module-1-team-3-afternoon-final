@@ -12,37 +12,48 @@
     font-family: $fontFamilyBody;
     border-width: 100%; 
     position:relative;
-        .footer-aside{
-            margin-bottom:1%;
+    .footer-aside{
+        margin-bottom:1%;
+    }
+
+    .footer-nav{
+        & ul{
+            padding:8px;
         }
-
-        .footer-nav{
-                 & ul{
-                    padding:8px;
-                }
-                   & li{
-                        list-style-type:none;
-                        padding: 5px;
-                    }
-               & a{
-                    color:$bodyColor;
-                    font-weight: bold;
-                    text-decoration: none;
-                    &:hover{
-                        color: $bodyImportantColor;
-                        transition: all 0.7s ease;
-                }
-        }     
-
-      }
-      .footer-logo{
+        & li{
+            list-style-type:none;
+            padding: 5px;
+            a:hover::before {
+                content: ' [ ';
+                font-weight: bold;
+                color: $headerColor;
+            }
+            
+            a:hover::after {
+                content: ' ] ';
+                font-weight: bold;
+                color: $headerColor;
+            }
+    
+            & a{        
+                color:$bodyColor;
+                font-weight: bold;
+                text-decoration: none;
+            }
+            & a:hover, 
+            a:focus {
+                color: $bodyImportantColor;
+                transition: all 0.7s ease;
+            }
+        }
+    }     
+    .footer-logo{
         img{
             width:120px;
         }
-
-    } 
-
+    }
 }
+
 @include forTablet{
     .footer{
     grid-template-columns:1fr 1fr 1fr;

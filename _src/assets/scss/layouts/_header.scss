@@ -9,11 +9,13 @@
     padding: rem(20);
     color: $menuColor;
     margin-top: 0;
+    font-weight: 500;
 
     & a {
       color: white;
-      &:hover,
-      a:focus {
+      padding: 0.5rem;
+      &:hover,  
+      &:focus {
         color: $bodyImportantColor;
         transition: all 0.7s ease;
       }
@@ -92,6 +94,7 @@
     color: $bodyImportantColor;
     font-size: rem(18);
     font-family: $fontFamilyBody;
+    font-weight: 600;
     position: absolute;
     bottom: -40px;
     left: calc(50% - 145px);

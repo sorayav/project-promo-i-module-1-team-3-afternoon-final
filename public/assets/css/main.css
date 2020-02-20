@@ -238,7 +238,7 @@ a {
 }
 
 .buttontop {
-  color: transparent;
+  display: none;
 }
 
 .container {
@@ -268,13 +268,15 @@ a {
   padding: 1.25rem;
   color: #fff;
   margin-top: 0;
+  font-weight: 500;
 }
 
 .container-header .h1header a {
   color: white;
+  padding: 0.5rem;
 }
 
-.container-header .h1header a:hover,.container-header .h1header a a:focus {
+.container-header .h1header a:hover,.container-header .h1header a:focus {
   color: #000;
   -webkit-transition: all 0.7s ease;
   transition: all 0.7s ease;
@@ -355,6 +357,7 @@ a {
   color: #000;
   font-size: 1.125rem;
   font-family: "Open Sans", sans-serif;
+  font-weight: 600;
   position: absolute;
   bottom: -40px;
   left: calc(50% - 145px);
@@ -386,9 +389,10 @@ a {
 }
 
 .container .ab-header h2 {
-  color: #099d8d;
+  color: #14d9c4;
   font-family: "Rubik", sans-serif;
   font-size: 24px;
+  font-weight: 500;
   text-align: center;
   line-height: 45px;
 }
@@ -407,7 +411,7 @@ a {
 
 .strengths h2 {
   color: #099d8d;
-  font-size: 24px;
+  font-size: 22px;
   font-family: "Rubik", sans-serif;
   font-weight: 500;
   margin: 15px;
@@ -576,13 +580,25 @@ a {
   padding: 5px;
 }
 
-.footer .footer-nav a {
+.footer .footer-nav li a:hover::before {
+  content: ' [ ';
+  font-weight: bold;
+  color: #099d8d;
+}
+
+.footer .footer-nav li a:hover::after {
+  content: ' ] ';
+  font-weight: bold;
+  color: #099d8d;
+}
+
+.footer .footer-nav li a {
   color: #54585a;
   font-weight: bold;
   text-decoration: none;
 }
 
-.footer .footer-nav a:hover {
+.footer .footer-nav li a:hover,.footer .footer-nav li a:focus {
   color: #000;
   -webkit-transition: all 0.7s ease;
   transition: all 0.7s ease;
@@ -622,6 +638,7 @@ a {
   color: #099d8d;
   font-family: "Rubik", sans-serif;
   font-size: 24px;
+  font-weight: 500;
   text-align: center;
   line-height: 45px;
 }
@@ -650,7 +667,7 @@ a {
 
 .form {
   font-family: "Open Sans", sans-serif;
-  font-size: 16px;
+  font-size: 14px;
   text-align: left;
   line-height: 24px;
   color: #54585a;
@@ -698,6 +715,20 @@ textarea {
   border: 0;
   color: white;
   text-transform: uppercase;
+}
+
+.button-contact input[type=submit]:hover {
+  color: #000;
+  font-weight: bold;
+  -webkit-transition: all 0.7s ease;
+  transition: all 0.7s ease;
+}
+
+.button-contact input[type=submit]:focus {
+  color: #000;
+  font-weight: bold;
+  -webkit-transition: all 0.7s ease;
+  transition: all 0.7s ease;
 }
 
 @media all and (min-width: 768px) {
@@ -755,6 +786,10 @@ textarea {
     opacity: 80%;
     padding: 0.9375rem 1.875rem;
     width: 441px;
+  }
+
+  .container .ab-header h2 {
+    color: #099d8d;
   }
 
   .strengths h2 {
@@ -887,6 +922,7 @@ textarea {
   }
 
   .buttontop {
+    display: block;
     position: fixed;
     bottom: 4%;
     right: 2%;
