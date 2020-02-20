@@ -764,6 +764,7 @@ textarea {
 
 .hero-team-gv {
   background-image: url(../images/gador_villanueva_cabra.jpg);
+  background-position-y: 35%;
 }
 
 .hero-team-sv {
