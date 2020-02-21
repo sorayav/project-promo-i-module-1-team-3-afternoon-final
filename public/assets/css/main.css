@@ -795,10 +795,12 @@ textarea {
   font-size: 16px;
   color: #54585a;
   text-align: justify;
+  line-height: 24px;
 }
 
 .team .team-member-skills {
   text-align: justify;
+  line-height: 24px;
 }
 
 .team .team-member-skills ul {
@@ -960,6 +962,10 @@ textarea {
 
   .team .team-member-box .team-member-description {
     padding-left: 20px;
+  }
+
+  .team .team-member-box .team-member-description {
+    padding-top: 0%;
   }
 }
 
