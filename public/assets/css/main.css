@@ -701,6 +701,7 @@ input {
   margin: 15px 0;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+  border: solid 1px lightgrey;
 }
 
 textarea {
@@ -710,6 +711,7 @@ textarea {
   margin: 15px 0;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+  border: solid 1px lightgrey;
 }
 
 .button-contact input[type=submit] {
