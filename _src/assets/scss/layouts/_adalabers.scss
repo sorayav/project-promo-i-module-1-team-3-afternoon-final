@@ -81,8 +81,6 @@
     a:hover, a:focus {
     color: $bodyImportantColor;
     transition: color 0.7s ease;
-    // transform: rotate(360deg);
-    // transition: transform 0.2s linear;
     }
 
     a:hover::before {
