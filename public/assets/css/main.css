@@ -386,6 +386,7 @@ a {
   -ms-flex-direction: column;
   flex-direction: column;
   margin-bottom: 30px;
+  margin-top: -10%;
   padding-top: 22.2%;
 }
 
@@ -396,6 +397,7 @@ a {
   font-weight: 500;
   text-align: center;
   line-height: 45px;
+  padding-bottom: 3%;
 }
 
 .container .ab-header p {
@@ -699,6 +701,7 @@ input {
   margin: 15px 0;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+  border: solid 1px lightgrey;
 }
 
 textarea {
@@ -708,6 +711,7 @@ textarea {
   margin: 15px 0;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+  border: solid 1px lightgrey;
 }
 
 .button-contact input[type=submit] {
@@ -781,6 +785,7 @@ textarea {
   font-family: "Rubik", sans-serif;
   font-size: 24px;
   font-weight: 500;
+  padding: 2% 0;
 }
 
 .team .team-member-box {
@@ -793,10 +798,12 @@ textarea {
   font-size: 16px;
   color: #54585a;
   text-align: justify;
+  line-height: 24px;
 }
 
 .team .team-member-skills {
   text-align: justify;
+  line-height: 24px;
 }
 
 .team .team-member-skills ul {
@@ -876,7 +883,8 @@ textarea {
   }
 
   .aboutus {
-    padding: 4%;
+    padding: 5% 0 4% 0;
+    margin-top: 0;
   }
 
   .container .ab-header h2 {
@@ -957,6 +965,10 @@ textarea {
 
   .team .team-member-box .team-member-description {
     padding-left: 20px;
+  }
+
+  .team .team-member-box .team-member-description {
+    padding-top: 0%;
   }
 }
 
@@ -1069,6 +1081,10 @@ textarea {
   .hero .whitebox p .textbox {
     width: 574px;
     height: 90px;
+  }
+
+  .aboutus {
+    padding: 2.5% 0 2% 0;
   }
 
   .footer-logo {
