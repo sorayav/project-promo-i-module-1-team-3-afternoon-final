@@ -928,7 +928,7 @@ textarea {
 
   .footer-nav {
     grid-area: footer-nav;
-    grid-column: 3;
+    grid-column-start: 4;
     grid-row: 1;
     text-align: right;
   }
