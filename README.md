@@ -5,7 +5,7 @@
 
 ## Tech used
 
-:atom_symbol: The first prototype of the website was done using HTLM5 and CSS3. Following Agile & SCRUM workflow and using Trello app to organize our tasks, during the second sprint we had to re-do the website by using Gulp to automatize and SASS (SCSS) to style.
+:atom_symbol: The first prototype of the website was done using HTLM5 and CSS3. Following Agile & SCRUM workflow and using the Trello app to organize our tasks, during the second sprint we had to re-do the website by using Gulp to automatize and SASS (SCSS) to style.
 
 ## The website
 
@@ -13,7 +13,7 @@
 
 #### Header
 
-A header with three different menus that will take you to each of the sections
+A header with three different menus that will take you to each section.
 
 #### Hero
 
@@ -23,20 +23,20 @@ An image that represents us and our motto!
 
 Information on how we work as a team.
 
-#### Strengths and Weaknesses 
+#### Strengths and weaknesses 
 
 Our strengths and weaknesses as a team, what we can contribute and what we need.
 
 #### Adalabers cards
 
-Information about each one so that you can get to know us better !
+Information about each one of us so you can get to know us better.
 
 #### Footer
 	
-Our logo and 3 different links to surf the web.
+Our logo and 3 different links to surf through the website.
 
-#### Form
-Form with obligatory fields to fill, with option to return to the main page or to be able to sail to some of the sections of the Web
+#### Contact form
+A contact form with obligatory fields to fill, with the option to return to the main page and navigate to the sections of the web.
 
 
 
