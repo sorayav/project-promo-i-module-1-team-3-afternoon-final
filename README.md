@@ -40,6 +40,7 @@ A contact form with obligatory fields to fill, with the option to return to the 
 
 
 
-![alt text](https://github.com/Adalab/project-promo-i-module-1-team-3-afternoon-final/blob/master/docs/assets/images/versionweb.png) 
-![alt text](https://github.com/Adalab/project-promo-i-module-1-team-3-afternoon-final/blob/master/docs/assets/images/versionmobile.png)
-![alt text](https://github.com/Adalab/project-promo-i-module-1-team-3-afternoon-final/blob/master/_src/assets/images/formfinal.png)
+![Versión web](https://github.com/Adalab/project-promo-i-module-1-team-3-afternoon-final/blob/master/docs/assets/images/versionweb.png)
+![Versión web perfiles](https://github.com/sorayav/project-promo-i-module-1-team-3-afternoon-final/blob/master/docs/assets/images/profiles.png)
+![Versión móvil](https://github.com/Adalab/project-promo-i-module-1-team-3-afternoon-final/blob/master/docs/assets/images/versionmobile.png)
+![Formulario](https://github.com/Adalab/project-promo-i-module-1-team-3-afternoon-final/blob/master/_src/assets/images/formfinal.png)
